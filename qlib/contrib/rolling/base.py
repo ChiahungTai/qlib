@@ -247,7 +247,7 @@ class Rolling:
                 recorder=rec,
                 default_module="qlib.workflow.record_temp",
             )
-            r.generate()
+            r._generate_internal()
         print(f"Your evaluation results can be found in the experiment named `{self.exp_name}`.")
 
     def run(self):

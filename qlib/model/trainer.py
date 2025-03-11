@@ -68,7 +68,7 @@ def _exe_task(task_config: dict):
             default_module="qlib.workflow.record_temp",
             try_kwargs={"model": model, "dataset": dataset},
         )
-        r.generate()
+        r._generate_internal()
 
 
 def begin_task_train(task_config: dict, experiment_name: str, recorder_name: str = None) -> Recorder:
